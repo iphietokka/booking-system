@@ -35,7 +35,7 @@
 
 						</div>
 						<div class="well">
-							<a href="{{url('admin/tamu')}}"><b>Click here</b></a> to add guests
+							<a href="{{url('admin/guest')}}"><b>Click here</b></a> to add guests
 						</div>
 					</div>
 					<div class="col-sm-5">

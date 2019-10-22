@@ -15,7 +15,7 @@ class Front
      */
     public function handle($request, Closure $next)
     {
-         if (auth()->check() && $request->user()->roles->name == 'Front') {
+        if (auth()->check() && $request->user()->roles->name == 'Front') {
             return $next($request);
         }
         return redirect()->guest('/');

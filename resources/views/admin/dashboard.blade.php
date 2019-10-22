@@ -14,9 +14,6 @@
                           <div class="progress-bar" style="width: 100%"></div>
                         </div>
                         <span class="progress-description">
-                        <a href="{{ url('admin/room/avail') }}" style="color: white;">
-                            More info <i class="fa fa-arrow-circle-right"></i>
-                          </a>
                         </span>
                       </div>
 
@@ -35,9 +32,6 @@
                           <div class="progress-bar" style="width: 100%"></div>
                         </div>
                         <span class="progress-description">
-                        <a href="{{ url('admin/room/used') }}" style="color: white;">
-                            More info <i class="fa fa-arrow-circle-right"></i>
-                          </a>
                         </span>
                       </div>
 
@@ -56,9 +50,6 @@
                           <div class="progress-bar" style="width: 100%"></div>
                         </div>
                         <span class="progress-description">
-                        <a href="{{ url('admin/room/dirty') }}" style="color: white;">
-                            More info <i class="fa fa-arrow-circle-right"></i>
-                          </a>
                         </span>
                       </div>
 
@@ -118,7 +109,7 @@
 
               @foreach($guest_checkout as $guest)
               <tr>
-                <td>{{$guest->guest->nama}}</td>
+                <td>{{$guest->guest->name}}</td>
                 <td>{{$guest->room->room_no}}</td>
                 <td>{{$guest->checkout_date}}</td>
               </tr>

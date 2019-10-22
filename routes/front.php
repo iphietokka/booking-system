@@ -12,10 +12,7 @@
 */
 Auth::routes();
 
-Route::group(['prefix'=>'front', 'middleware' => ['auth','front']], function () {
+Route::group(['prefix' => 'front', 'middleware' => ['auth', 'front']], function () {
 
 	Route::get('/', 'Front\DashboardController@index');
-
-
-
 });
